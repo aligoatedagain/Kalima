@@ -109,7 +109,7 @@
 // export default Demo;
 import React from 'react';
 import { BookMarked } from 'lucide-react';
-import ramsey from '../assests/ramsey.jpg'; 
+import ramsey from '../assets/ramsey.jpg'; 
 
 const Demo = () => {
   return (
