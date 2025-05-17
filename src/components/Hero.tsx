@@ -173,11 +173,8 @@ const Hero = () => {
 
                 {/* YouTube-style thumbnail with play button */}
                 <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden relative">
-                  <img
-                    src= {rogan} // Replace with your actual path
-                    alt="اختر فيديو يوتيوب للبدء"
-                    className="w-full h-full object-cover"
-                  />
+                {rogan && <img src={rogan} alt="Rogan" />}
+
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-16 h-16 bg-app-primary rounded-full flex items-center justify-center shadow-lg">
                       <svg
