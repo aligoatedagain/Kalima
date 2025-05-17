@@ -106,7 +106,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
-import rogan from '../assets/Joe-Rogan.jpg'; 
+import rogan from '../assets/JoeRogan.jpg'; 
 
 const Hero = () => {
   const [email, setEmail] = useState('');
