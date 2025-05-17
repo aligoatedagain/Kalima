@@ -154,6 +154,7 @@ const Hero = () => {
                 className="bg-app-primary hover:bg-app-secondary text-white transition-colors"
               >
                 انضم إلى قائمة الانتظار
+                test
               </Button>
             </form>
           </div>
