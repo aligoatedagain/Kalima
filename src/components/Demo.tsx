@@ -137,7 +137,7 @@ const Demo = () => {
               {/* 👇 Image-Based Video Area with Text Overlay */}
               <div className="aspect-video relative">
                 <img
-                  src="/public/ramsey.jpg"
+                  src="/ramsey.jpg"
                   alt="Ramsey"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
