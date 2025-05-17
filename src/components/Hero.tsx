@@ -106,6 +106,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
+import rogan from '../assests/Joe-Rogan.jpg'; 
 
 const Hero = () => {
   const [email, setEmail] = useState('');
@@ -173,7 +174,7 @@ const Hero = () => {
                 {/* YouTube-style thumbnail with play button */}
                 <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden relative">
                   <img
-                    src= "/public/Joe-Rogan.jpg" // Replace with your actual path
+                    src= {rogan} // Replace with your actual path
                     alt="اختر فيديو يوتيوب للبدء"
                     className="w-full h-full object-cover"
                   />
