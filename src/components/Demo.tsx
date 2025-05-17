@@ -109,6 +109,7 @@
 // export default Demo;
 import React from 'react';
 import { BookMarked } from 'lucide-react';
+import ramsey from '../assests/ramsey.jpg'; 
 
 const Demo = () => {
   return (
@@ -137,7 +138,7 @@ const Demo = () => {
               {/* 👇 Image-Based Video Area with Text Overlay */}
               <div className="aspect-video relative">
                 <img
-                  src="/ramsey.jpg"
+                  src={ramsey}
                   alt="Ramsey"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
