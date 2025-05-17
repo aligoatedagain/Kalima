@@ -153,8 +153,8 @@ const Hero = () => {
                 type="submit"
                 className="bg-app-primary hover:bg-app-secondary text-white transition-colors"
               >
-                انضم إلى قائمة الانتظار
-                test
+                انضممممممم إلى قائمة الانتظار
+                
               </Button>
             </form>
           </div>
