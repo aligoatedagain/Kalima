@@ -126,7 +126,7 @@
 
 // export default Hero;
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/components/ui/use-toast';
@@ -136,72 +136,67 @@ import rogan from '../assets/JoeRogan.jpg';
 const Hero = () => {
   const [email, setEmail] = useState('');
   const { toast } = useToast();
+  const [submittedEmails, setSubmittedEmails] = useState<string[]>([]);
 
-  // Regex for validating email format (basic)
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Load previously submitted emails from localStorage
+  useEffect(() => {
+    const stored = localStorage.getItem('submittedEmails');
+    if (stored) setSubmittedEmails(JSON.parse(stored));
+  }, []);
+
+  const isValidEmail = (email: string) => {
+    const regex = /^[a-zA-Z0-9._%+-]+@(?:gmail\.com|hotmail\.com|yahoo\.com|outlook\.com)$/;
+    return regex.test(email);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const trimmedEmail = email.trim().toLowerCase();
 
-    if (!email) {
+    if (!isValidEmail(trimmedEmail)) {
       toast({
-        title: 'خطأ',
-        description: 'يرجى إدخال البريد الإلكتروني.',
-        duration: 4000,
-      });
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      toast({
-        title: 'خطأ',
-        description: 'يرجى إدخال بريد إلكتروني صحيح.',
-        duration: 4000,
-      });
-      return;
-    }
-
-    // Check if this email was already submitted (client-side)
-    const submittedEmails = JSON.parse(localStorage.getItem('submittedEmails') || '[]');
-
-    if (submittedEmails.includes(email)) {
-      toast({
-        title: 'تم الإرسال مسبقاً',
-        description: 'لقد قمت بالانضمام لقائمة الانتظار بالفعل.',
+        title: 'بريد إلكتروني غير صالح',
+        description: 'يرجى إدخال بريد إلكتروني صحيح مثل gmail أو yahoo أو outlook.',
         duration: 5000,
       });
       return;
     }
 
-    // Send email via EmailJS
-    emailjs
-      .send(
-        'service_e87fvso', // Your EmailJS service ID
-        'template_87sqotp', // Your EmailJS template ID
-        { email }, // Template params
-        'nbZD6w89cqpfq1nER' // Public key
-      )
-      .then(() => {
-        toast({
-          title: 'شكراً لك!',
-          description: 'تم إضافتك إلى قائمة الانتظار. سنتواصل معك قريباً.',
-          duration: 5000,
-        });
-
-        // Save email in localStorage to block future submissions
-        submittedEmails.push(email);
-        localStorage.setItem('submittedEmails', JSON.stringify(submittedEmails));
-
-        setEmail('');
-      })
-      .catch((error) => {
-        console.error('EmailJS Error:', error);
-        toast({
-          title: 'حدث خطأ!',
-          description: 'يرجى المحاولة مرة أخرى لاحقاً.',
-          duration: 5000,
-        });
+    if (submittedEmails.includes(trimmedEmail)) {
+      toast({
+        title: 'لقد قمت بالتسجيل بالفعل',
+        description: 'هذا البريد الإلكتروني مسجل بالفعل في قائمتنا.',
+        duration: 5000,
       });
+      return;
+    }
+
+    // Send email
+    emailjs.send(
+      'service_xsnp95b',         // ✅ NEW Service ID
+      'template_9x8e9ld',        // ✅ NEW Template ID
+      { email: trimmedEmail },
+      '6J2nYGWVwTzCVfg6Q'        // ✅ NEW Public Key
+    )
+    .then(() => {
+      toast({
+        title: 'شكراً لك!',
+        description: 'تم إضافتك إلى قائمة الانتظار. سنتواصل معك قريباً.',
+        duration: 5000,
+      });
+      const updated = [...submittedEmails, trimmedEmail];
+      setSubmittedEmails(updated);
+      localStorage.setItem('submittedEmails', JSON.stringify(updated));
+      setEmail('');
+    })
+    .catch((error) => {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: 'حدث خطأ!',
+        description: 'يرجى المحاولة مرة أخرى لاحقاً.',
+        duration: 5000,
+      });
+    });
   };
 
   return (
