@@ -138,55 +138,55 @@ const Hero = () => {
   const { toast } = useToast();
   const [submittedEmails, setSubmittedEmails] = useState<string[]>([]);
 
-  // Load previously submitted emails from localStorage
   useEffect(() => {
     const stored = localStorage.getItem('submittedEmails');
-    if (stored) setSubmittedEmails(JSON.parse(stored));
+    if (stored) {
+      setSubmittedEmails(JSON.parse(stored));
+    }
   }, []);
 
   const isValidEmail = (email: string) => {
-    const regex = /^[a-zA-Z0-9._%+-]+@(?:gmail\.com|hotmail\.com|yahoo\.com|outlook\.com)$/;
-    return regex.test(email);
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@(gmail\.com|outlook\.com|hotmail\.com|yahoo\.com|icloud\.com)$/;
+    return emailRegex.test(email);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const trimmedEmail = email.trim().toLowerCase();
 
-    if (!isValidEmail(trimmedEmail)) {
+    if (!isValidEmail(email)) {
       toast({
-        title: 'بريد إلكتروني غير صالح',
-        description: 'يرجى إدخال بريد إلكتروني صحيح مثل gmail أو yahoo أو outlook.',
+        title: 'بريد غير صالح',
+        description: 'يرجى إدخال بريد إلكتروني صالح مثل gmail.com أو outlook.com',
         duration: 5000,
       });
       return;
     }
 
-    if (submittedEmails.includes(trimmedEmail)) {
+    if (submittedEmails.includes(email)) {
       toast({
-        title: 'لقد قمت بالتسجيل بالفعل',
-        description: 'هذا البريد الإلكتروني مسجل بالفعل في قائمتنا.',
+        title: 'تم التسجيل مسبقاً',
+        description: 'لقد قمت بالفعل بالتسجيل باستخدام هذا البريد.',
         duration: 5000,
       });
       return;
     }
 
-    // Send email
     emailjs.send(
-      'service_xsnp95b',         // ✅ NEW Service ID
-      'template_9x8e9ld',        // ✅ NEW Template ID
-      { email: trimmedEmail },
-      '6J2nYGWVwTzCVfg6Q'        // ✅ NEW Public Key
+      'service_e87fvso',
+      'template_87sqotp',
+      { email },
+      'nbZD6w89cqpfq1nER'
     )
     .then(() => {
+      const updated = [...submittedEmails, email];
+      setSubmittedEmails(updated);
+      localStorage.setItem('submittedEmails', JSON.stringify(updated));
+
       toast({
         title: 'شكراً لك!',
         description: 'تم إضافتك إلى قائمة الانتظار. سنتواصل معك قريباً.',
         duration: 5000,
       });
-      const updated = [...submittedEmails, trimmedEmail];
-      setSubmittedEmails(updated);
-      localStorage.setItem('submittedEmails', JSON.stringify(updated));
       setEmail('');
     })
     .catch((error) => {
@@ -245,7 +245,7 @@ const Hero = () => {
               </div>
               <div className="p-4">
                 <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden relative">
-                  {rogan && <img src={rogan} alt="Rogan" />}
+                  <img src={rogan} alt="Rogan" />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                     <div className="w-16 h-16 bg-app-primary rounded-full flex items-center justify-center shadow-lg">
                       <svg
