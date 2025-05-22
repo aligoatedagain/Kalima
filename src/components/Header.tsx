@@ -51,7 +51,7 @@ const Header = () => {
                 <path d="m4 6 8 8L20 6" />
               </svg>
               <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-app-primary to-app-bright">
-                تعلّم الإنجليزية
+                Kalima
               </h1>
             </div>
           </div>

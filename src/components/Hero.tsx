@@ -211,7 +211,9 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl mb-8 text-gray-700">
-              شاهد. افهم. تعلّم المفردات والقواعد بمساعدة الذكاء الاصطناعي، وحفظها في قاموسك الخاص أيضًا.
+تعلّم بسرعة مع الذكاء الاصطناعي، واحفظ المفردات والقواعد الجديدة بسهولة وفي مكان واحد.
+
+
             </p>
 
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mr-auto ml-0">

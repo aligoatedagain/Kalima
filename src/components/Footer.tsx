@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-6 text-center">
-          <p className="text-gray-400">جميع الحقوق محفوظة © {new Date().getFullYear()} منصة تعلم الإنجليزية</p>
+          <p className="text-gray-400">جميع الحقوق محفوظة © {new Date().getFullYear()} Kalima</p>
         </div>
       </div>
     </footer>
