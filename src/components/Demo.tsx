@@ -152,7 +152,7 @@ const Demo = () => {
               <div className="p-4 border-t border-gray-200">
                 <div className="flex justify-between items-center mb-4">
                   <div className="flex-1 text-right">
-                    <h3 className="font-bold text-gray-900">Real Life English Lesson</h3>
+                    {/* <h3 className="font-bold text-gray-900">Real Life English Lesson</h3> */}
                     <p className="text-sm text-gray-600">درس إنجليزي من الحياة الواقعية</p>
                   </div>
                   <div>
@@ -186,8 +186,8 @@ const Demo = () => {
                     <p className="text-sm text-gray-600">إعادة تقديم</p>
                   </div>
                   <div className="bg-app-light bg-opacity-50 p-2 rounded-lg">
-                    <p className="font-medium text-gray-900">happening</p>
-                    <p className="text-sm text-gray-600">رائج، شائع</p>
+                    <p className="font-medium text-gray-900">struggling</p>
+                    <p className="text-sm text-gray-600"> يواجه صعوبات </p>
                   </div>
                   <div className="bg-app-light bg-opacity-50 p-2 rounded-lg">
                     <p className="font-medium text-gray-900">Pizzeria</p>

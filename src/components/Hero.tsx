@@ -279,8 +279,8 @@ const Hero = () => {
                       <p className="text-xs text-gray-600">في الواقع</p>
                     </div>
                     <div className="bg-app-light p-2 rounded-md text-center">
-                      <p className="text-xs">case scenario</p>
-                      <p className="text-xs text-gray-600">حالة نموذجية</p>
+                      <p className="text-xs">great case scenario</p>
+                      <p className="text-xs text-gray-600">أفضل سيناريو ممكن</p>
                     </div>
                   </div>
                 </div>
