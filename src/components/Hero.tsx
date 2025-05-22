@@ -171,13 +171,13 @@ const Hero = () => {
       return;
     }
 
-    // Send email
-    emailjs.send(
-      'service_xsnp95b',         // ✅ NEW Service ID
-      'template_9x8e9ld',        // ✅ NEW Template ID
-      { email: trimmedEmail },
-      '6J2nYGWVwTzCVfg6Q'        // ✅ NEW Public Key
-    )
+  emailjs.send(
+  'service_xsnp95b',      // ✅ Service ID
+  'template_9x8e9ld',     // ✅ Template ID
+  { email: trimmedEmail },
+  '6J2nYGWVwTzCVfg6Q'     // 🚫 Public Key – should go in .env
+)
+
     .then(() => {
       toast({
         title: 'شكراً لك!',
