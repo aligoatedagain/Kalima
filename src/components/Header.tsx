@@ -154,7 +154,7 @@ const Header = () => {
     <header className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-app-primary">Kalima</h1>
+        <h1 className="text-2xl font-bold text-app-primary">FluentFriend</h1>
 
         {/* Language Dropdown */}
         <div className="relative w-52">
