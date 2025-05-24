@@ -1,0 +1,32 @@
+{
+  "title": "جرب منصتنا التفاعلية",
+  "description": "شاهد كيف يمكنك تحويل أي فيديو يوتيوب إلى درس تفاعلي لتعلم اللغة الإنجليزية مع ميزات متقدمة تساعدك على التطور بسرعة.",
+  "playerLabel": "مشغل فيديو تعليمي",
+  "videoTitle": "درس إنجليزي من الحياة الواقعية",
+  "videoDescription": "يزور جوردن رامزي مطعمًا إيطاليًا يواجه صعوبات ويجب أن يعيد تقديم نفسه كمطعم بيتزا عصري.",
+  "savedWords": {
+    "title": "المفردات المحفوظة",
+    "reintroduce": {
+      "word": "reintroduce",
+      "translation": "إعادة تقديم"
+    },
+    "struggling": {
+      "word": "struggling",
+      "translation": "يواجه صعوبات"
+    },
+    "pizzeria": {
+      "word": "Pizzeria",
+      "translation": "مطعم بيتزا"
+    }
+  },
+  "quiz": {
+    "title": "الاختبار السريع",
+    "question": "أكمل الجملة: \"This restaurant has to ______ itself.\"",
+    "options": {
+      "reintroduce": "reintroduce",
+      "rebuild": "rebuild",
+      "remember": "remember"
+    }
+  },
+  "button": "متابعة التعلم"
+}

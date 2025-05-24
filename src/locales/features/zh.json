@@ -1,0 +1,21 @@
+{
+  "section_title": "平台特色",
+  "features": [
+    {
+      "title": "粘贴 YouTube 链接",
+      "description": "将任何视频转化为互动课程。"
+    },
+    {
+      "title": "即时翻译和字幕",
+      "description": "自动将关键单词和短语翻译为中文。"
+    },
+    {
+      "title": "学习卡和智能测试",
+      "description": "使用基于视频的卡片和测试自我测验。"
+    },
+    {
+      "title": "保存词汇并跟踪进度",
+      "description": "创建个人单词表并随着时间推移追踪你的进展。"
+    }
+  ]
+}

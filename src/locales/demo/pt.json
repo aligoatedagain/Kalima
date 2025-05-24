@@ -1,0 +1,33 @@
+{
+  "title": "Demonstração Interativa",
+  "description": "Veja como nossa plataforma pode ajudá-lo a aprender inglês de forma mais inteligente, rápida e divertida.",
+  "playerLabel": "Reprodutor de vídeo",
+  "videoTitle": "Aula de inglês contextual",
+  "videoDescription": "Aprenda a usar palavras em conversas reais com exemplos práticos e situações do dia a dia.",
+  "savedWords": {
+    "title": "Palavras salvas",
+    "reintroduce": {
+      "word": "reintroduzir",
+      "translation": "apresentar novamente algo"
+    },
+    "struggling": {
+      "word": "lutando",
+      "translation": "enfrentando dificuldades"
+    },
+    "pizzeria": {
+      "word": "pizzaria",
+      "translation": "restaurante que serve pizza"
+    }
+  },
+  "quiz": {
+    "title": "Teste Rápido",
+    "question": "Qual palavra apareceu no vídeo?",
+    "options": {
+      "reintroduce": "reintroduzir",
+      "rebuild": "reconstruir",
+      "remember": "lembrar"
+    }
+  },
+  "button": "Verificar respostas"
+}
+

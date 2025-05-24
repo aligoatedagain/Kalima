@@ -1,0 +1,17 @@
+{
+  "headline": "从你喜欢的任何 YouTube 视频中学习英语",
+  "description": "通过人工智能快速学习，轻松掌握新词汇和语法，全部集中在一个地方。",
+  "email_placeholder": "电子邮件",
+  "join_now": "加入等待列表",
+  "invalid_email": "无效的电子邮件地址",
+  "email_description": "请输入有效的电子邮件，例如 gmail、yahoo 或 outlook。",
+  "already_registered": "你已经注册过了",
+  "already_description": "该邮箱已在我们的列表中。",
+  "success_title": "感谢你！",
+  "success_description": "你已成功加入等待列表，我们将尽快联系你。",
+  "error": "发生错误！",
+  "error_description": "请稍后再试。",
+  "subtitle": "文字翻译：",
+  "trans_in_fact": "实际上",
+  "trans_case": "最佳情况"
+}

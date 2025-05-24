@@ -1,0 +1,21 @@
+{
+  "learnLanguage": "学习语言",
+  "suggestedClips": "推荐片段",
+  "vocabLists": "词汇列表",
+  "tests": "测试",
+  "languageLevels": "语言水平",
+  "aboutPlatform": "关于平台",
+  "aboutUs": "关于我们",
+  "team": "团队",
+  "terms": "条款与条件",
+  "privacyPolicy": "隐私政策",
+  "help": "帮助",
+  "faq": "常见问题",
+  "support": "技术支持",
+  "contactUs": "联系我们",
+  "suggestions": "建议",
+  "joinNow": "立即加入",
+  "waitlistText": "订阅候补名单，平台上线时第一时间通知您",
+  "joinWaitlist": "加入候补名单",
+  "copyright": "版权所有 © {{year}} Kalima"
+}

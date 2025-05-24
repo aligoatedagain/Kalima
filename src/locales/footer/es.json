@@ -1,0 +1,25 @@
+{
+  "learnLanguage": "Aprender Idiomas",
+  "suggestedClips": "Clips Sugeridos",
+  "vocabLists": "Listas de Vocabulario",
+  "tests": "Pruebas",
+  "languageLevels": "Niveles de Idioma",
+
+  "aboutPlatform": "Sobre la Plataforma",
+  "aboutUs": "Sobre Nosotros",
+  "team": "Equipo",
+  "terms": "Términos de Servicio",
+  "privacyPolicy": "Política de Privacidad",
+
+  "help": "Ayuda",
+  "faq": "Preguntas Frecuentes",
+  "support": "Soporte",
+  "contactUs": "Contáctanos",
+  "suggestions": "Sugerencias",
+
+  "joinNow": "Únete Ahora",
+  "waitlistText": "Sé el primero en probar nuestra plataforma. ¡Regístrate para recibir acceso anticipado!",
+  "joinWaitlist": "Unirse a la Lista de Espera",
+
+  "copyright": "© {{year}} Todos los derechos reservados."
+}

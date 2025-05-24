@@ -1,0 +1,33 @@
+{
+  "title": "试用我们的互动平台",
+  "description": "看看如何将任何 YouTube 视频转化为英语学习课程，使用先进功能帮助你快速提升。",
+  "playerLabel": "英语视频播放器",
+  "videoTitle": "真实生活中的英语课",
+  "videoDescription": "戈登·拉姆齐拜访了一家陷入困境的意大利餐厅，它必须重新定义自己为本地最火的披萨店。",
+  "savedWords": {
+    "title": "已保存词汇",
+    "reintroduce": {
+      "word": "reintroduce",
+      "translation": "重新介绍"
+    },
+    "struggling": {
+      "word": "struggling",
+      "translation": "挣扎的"
+    },
+    "pizzeria": {
+      "word": "Pizzeria",
+      "translation": "披萨店"
+    }
+  },
+  "quiz": {
+    "title": "快速测验",
+    "question": "完成句子: \"This restaurant has to ______ itself.\"",
+    "options": {
+      "reintroduce": "reintroduce",
+      "rebuild": "rebuild",
+      "remember": "remember"
+    }
+  },
+  "button": "继续学习"
+}
+

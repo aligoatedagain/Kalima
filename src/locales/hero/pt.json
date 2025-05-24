@@ -1,0 +1,17 @@
+{
+  "headline": "Aprenda inglês facilmente",
+  "description": "Nosso método inovador o ajuda a dominar o inglês em menos tempo.",
+  "email_placeholder": "Digite seu e-mail",
+  "join_now": "Comece agora",
+  "invalid_email": "Endereço de e-mail inválido",
+  "email_description": "Use um e-mail válido como @gmail.com",
+  "already_registered": "Você já está registrado",
+  "already_description": "Este e-mail já foi enviado",
+  "success_title": "Registrado com sucesso",
+  "success_description": "Verifique seu e-mail para novidades futuras",
+  "error": "Erro ao enviar",
+  "error_description": "Algo deu errado. Tente novamente.",
+  "subtitle": "Traduções em tempo real com contexto",
+  "trans_in_fact": "na verdade",
+  "trans_case": "ótimo cenário"
+}

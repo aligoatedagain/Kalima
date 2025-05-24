@@ -1,0 +1,17 @@
+{
+  "headline": "Aprende inglés de la forma más divertida y realista",
+  "description": "Ve clips reales, practica palabras en contexto, y mejora cada día",
+  "email_placeholder": "Tu correo electrónico...",
+  "join_now": "Únete ahora",
+  "invalid_email": "Correo inválido",
+  "email_description": "Por favor, ingrese un correo válido de Gmail, Yahoo, Outlook o Hotmail",
+  "already_registered": "Ya registrado",
+  "already_description": "Este correo ya está en la lista de espera",
+  "success_title": "¡Registrado con éxito!",
+  "success_description": "Recibirás una notificación cuando lancemos la plataforma",
+  "error": "Error",
+  "error_description": "Hubo un problema, inténtalo más tarde",
+  "subtitle": "Subtítulos extraídos de videos reales",
+  "trans_in_fact": "de hecho",
+  "trans_case": "el mejor escenario posible"
+}
