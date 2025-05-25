@@ -86,7 +86,7 @@ i18n
         footer: ptFooter,
       },
     },
-    lng: 'ar', // default language
+    lng: 'en', // default language
     fallbackLng: 'en', // fallback to English
     ns: ['header', 'hero', 'features', 'demo', 'cta', 'footer'],
     defaultNS: 'header',
