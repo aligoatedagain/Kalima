@@ -1,3 +1,4 @@
+
 // import React, { useState, useEffect } from 'react';
 // import { Button } from '@/components/ui/button';
 // import { Input } from '@/components/ui/input';
@@ -7,7 +8,7 @@
 // import { useTranslation } from 'react-i18next';
 
 // const Hero = () => {
-//   const { t } = useTranslation('hero'); // 👈 Loads from hero/ar.json or hero/zh.json
+//   const { t } = useTranslation('hero');
 //   const [email, setEmail] = useState('');
 //   const { toast } = useToast();
 //   const [submittedEmails, setSubmittedEmails] = useState<string[]>([]);
@@ -18,11 +19,11 @@
 //   }, []);
 
 //   const isValidEmail = (email: string) => {
-//     const regex = /^[a-zA-Z0-9._%+-]+@(?:gmail\.com|hotmail\.com|yahoo\.com|outlook\.com)$/;
+//     const regex = /^[a-zA-Z0-9._%+-]+@(gmail|hotmail|yahoo|outlook)\.com$/i;
 //     return regex.test(email);
 //   };
 
-//   const handleSubmit = (e: React.FormEvent) => {
+//   const handleSubmit = async (e: React.FormEvent) => {
 //     e.preventDefault();
 //     const trimmedEmail = email.trim().toLowerCase();
 
@@ -44,32 +45,32 @@
 //       return;
 //     }
 
-//     emailjs
-//       .send(
-//         'service_xsnp95b',
-//         'template_9x8e9ld',
+//     try {
+//       await emailjs.send(
+//         import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+//         import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
 //         { email: trimmedEmail },
-//         '6J2nYGWVwTzCVfg6Q'
-//       )
-//       .then(() => {
-//         toast({
-//           title: t('success_title'),
-//           description: t('success_description'),
-//           duration: 5000,
-//         });
-//         const updated = [...submittedEmails, trimmedEmail];
-//         setSubmittedEmails(updated);
-//         localStorage.setItem('submittedEmails', JSON.stringify(updated));
-//         setEmail('');
-//       })
-//       .catch((error) => {
-//         console.error('EmailJS Error:', error);
-//         toast({
-//           title: t('error'),
-//           description: t('error_description'),
-//           duration: 5000,
-//         });
+//         import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+//       );
+
+//       toast({
+//         title: t('success_title'),
+//         description: t('success_description'),
+//         duration: 5000,
 //       });
+
+//       const updated = [...submittedEmails, trimmedEmail];
+//       setSubmittedEmails(updated);
+//       localStorage.setItem('submittedEmails', JSON.stringify(updated));
+//       setEmail('');
+//     } catch (error) {
+//       console.error('EmailJS Error:', error);
+//       toast({
+//         title: t('error'),
+//         description: t('error_description'),
+//         duration: 5000,
+//       });
+//     }
 //   };
 
 //   return (
@@ -87,7 +88,10 @@
 //               {t('description')}
 //             </p>
 
-//             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mr-auto ml-0">
+//             <form
+//               onSubmit={handleSubmit}
+//               className="flex flex-col sm:flex-row gap-3 max-w-md mr-auto ml-0"
+//             >
 //               <Input
 //                 type="email"
 //                 placeholder={t('email_placeholder')}
@@ -141,7 +145,8 @@
 //                   <p className="text-sm text-gray-700 mb-2">{t('subtitle')}</p>
 //                   <div className="bg-gray-50 p-3 rounded-md mb-2">
 //                     <p className="text-sm">
-//                       <span className="text-app-primary font-medium">...</span> in fact in my mind he is great case scenario <span className="text-app-primary font-medium">...</span>
+//                       <span className="text-app-primary font-medium">...</span> in fact in my mind he is great case scenario{' '}
+//                       <span className="text-app-primary font-medium">...</span>
 //                     </p>
 //                   </div>
 //                   <div className="grid grid-cols-2 gap-2 mt-3">
@@ -155,11 +160,10 @@
 //                     </div>
 //                   </div>
 //                 </div>
-
 //               </div>
 //             </div>
 //           </div>
-
+//           {/* End of Video Preview Section */}
 //         </div>
 //       </div>
 //     </section>

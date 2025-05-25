@@ -9,6 +9,14 @@ import arDemo from './locales/demo/ar.json';
 import arCta from './locales/cta/ar.json';
 import arFooter from './locales/footer/ar.json';
 
+// English
+import enHeader from './locales/header/en.json';
+import enHero from './locales/hero/en.json';
+import enFeatures from './locales/features/en.json';
+import enDemo from './locales/demo/en.json';
+import enCta from './locales/cta/en.json';
+import enFooter from './locales/footer/en.json';
+
 // Chinese
 import zhHeader from './locales/header/zh.json';
 import zhHero from './locales/hero/zh.json';
@@ -45,6 +53,14 @@ i18n
         cta: arCta,
         footer: arFooter,
       },
+      en: {
+        header: enHeader,
+        hero: enHero,
+        features: enFeatures,
+        demo: enDemo,
+        cta: enCta,
+        footer: enFooter,
+      },
       zh: {
         header: zhHeader,
         hero: zhHero,
@@ -56,8 +72,8 @@ i18n
       es: {
         header: esHeader,
         hero: esHero,
-         features: esFeatures,
-         demo: esDemo,
+        features: esFeatures,
+        demo: esDemo,
         cta: esCta,
         footer: esFooter,
       },
@@ -67,11 +83,11 @@ i18n
         features: ptFeatures,
         demo: ptDemo,
         cta: ptCta,
-         footer: ptFooter,
+        footer: ptFooter,
       },
     },
-    lng: 'ar',
-    fallbackLng: 'ar',
+    lng: 'ar', // default language
+    fallbackLng: 'en', // fallback to English
     ns: ['header', 'hero', 'features', 'demo', 'cta', 'footer'],
     defaultNS: 'header',
     interpolation: {

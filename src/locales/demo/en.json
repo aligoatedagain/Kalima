@@ -1,0 +1,32 @@
+{
+  "title": "Try a Demo Lesson",
+  "description": "Experience how learning English with our app feels like. A short interactive lesson below will help you get a real taste.",
+  "playerLabel": "AI Learning Preview",
+  "videoTitle": "Day 1 — Ramsey's Journey",
+  "videoDescription": "In this lesson, you’ll follow Ramsey’s story and learn useful expressions through context.",
+  "savedWords": {
+    "title": "Saved Words",
+    "reintroduce": {
+      "word": "Reintroduce",
+      "translation": "To introduce again"
+    },
+    "struggling": {
+      "word": "Struggling",
+      "translation": "Having difficulty"
+    },
+    "pizzeria": {
+      "word": "Pizzeria",
+      "translation": "Pizza restaurant"
+    }
+  },
+  "quiz": {
+    "title": "Quick Quiz",
+    "question": "What does 'Reintroduce' mean?",
+    "options": {
+      "reintroduce": "To introduce again",
+      "rebuild": "To build again",
+      "remember": "To recall"
+    }
+  },
+  "button": "Start Learning"
+}

@@ -1,0 +1,18 @@
+{
+  "headline": "Learn English the Smart Way",
+  "description": "Boost your English skills with YouTube videos, vocabulary, quizzes, and grammar practice.",
+  "email_placeholder": "Enter your email",
+  "join_now": "Join Now",
+  "invalid_email": "Invalid email format",
+  "email_description": "Please enter a valid email like Gmail, Outlook, or Yahoo.",
+  "already_registered": "Already Registered",
+  "already_description": "You've already signed up with this email.",
+  "success_title": "Success!",
+  "success_description": "You’ve been added to the waiting list.",
+  "error": "Something went wrong",
+  "error_description": "Please try again later.",
+  "subtitle": "Watch a real English learning case in action",
+  "trans_in_fact": "actually, to be honest",
+  "trans_case": "the best possible outcome"
+}
+

@@ -1,0 +1,25 @@
+{
+  "learnLanguage": "Learn English",
+  "suggestedClips": "Suggested Clips",
+  "vocabLists": "Vocabulary Lists",
+  "tests": "Practice Tests",
+  "languageLevels": "Language Levels",
+
+  "aboutPlatform": "About the Platform",
+  "aboutUs": "About Us",
+  "team": "Our Team",
+  "terms": "Terms of Service",
+  "privacyPolicy": "Privacy Policy",
+
+  "help": "Help",
+  "faq": "FAQ",
+  "support": "Support Center",
+  "contactUs": "Contact Us",
+  "suggestions": "Send Suggestions",
+
+  "joinNow": "Join Now",
+  "waitlistText": "Get early access and be the first to try our platform.",
+  "joinWaitlist": "Join the Waitlist",
+
+  "copyright": "© {{year}} FluentFriend. All rights reserved."
+}

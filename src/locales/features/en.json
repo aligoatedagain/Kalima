@@ -1,0 +1,21 @@
+{
+  "section_title": "App Features",
+  "features": [
+    {
+      "title": "Smart Linking",
+      "description": "Automatically connects learners with relevant vocabulary and grammar."
+    },
+    {
+      "title": "Cultural Insights",
+      "description": "Learn language through real-life cultural references and stories."
+    },
+    {
+      "title": "Guided Learning",
+      "description": "Step-by-step lessons to help you improve consistently every day."
+    },
+    {
+      "title": "Progress Tracking",
+      "description": "Track your improvements and stay motivated with detailed insights."
+    }
+  ]
+}

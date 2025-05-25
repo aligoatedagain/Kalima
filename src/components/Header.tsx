@@ -138,7 +138,6 @@
 
 
 
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
@@ -163,6 +162,7 @@ const Header = () => {
             value={i18n.language}
             className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2 pr-10 text-sm shadow-md focus:outline-none focus:ring-2 focus:ring-app-primary focus:border-app-primary transition text-gray-700 w-full"
           >
+            <option value="en">🇬🇧 English</option>
             <option value="ar">🇸🇦 العربية</option>
             <option value="zh">🇨🇳 中文</option>
             <option value="es">🇪🇸 Español</option>
